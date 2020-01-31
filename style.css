@@ -1,7 +1,13 @@
-h1 {
-  text-align: center;
+p {
+	text-align: center;
+	color:red;
 }
 
 body {
-  background-image: url("mainBackground.jpg");
+	/*background-image: url("images/mainBackground.jpg");*/
+}
+
+#backgroundFrame {
+	margin: auto;
+  	width: 50%;
 }
