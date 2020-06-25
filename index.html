@@ -1,17 +1,65 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
-	<title>Ed Gein</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Interactive Ed Gein Website">
+	<title>Ed Gein</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	 crossorigin="anonymous">
+	</script>
 </head>
 
-<body>
-	<button id="msg">text</button>
-	<img id="backgroundFrame" src="images/backgroundFrame.png"></img>
+<body class="darkgray">
+	<div class="container-fluid mt-2" style="width:70%">
+		<img src="images/blackFrame.png" class="img-fluid" id="gameFrame" alt="Game not loaded">
+		<div class="container-fluid mt-1">
+			<div class="row navMenu">
+				<div class="col-sm-3">
+					<button class="text-center btn-block border border-primary text buttonHighlightBlue" id="station"></button> <!--Police Station-->
+				</div>
+				<div class="col-sm-3">
+					<button class="text-center btn-block border border-primary text buttonHighlightBlue" id="bar"></button> <!--Bar-->
+				</div>
+				<div class="col-sm-3">
+					<button class="text-center btn-block border border-primary text buttonHighlightBlue" id="store"></button> <!--Hardware Store-->
+				</div>
+				<div class="col-sm-3">
+					<button class="text-center btn-block border border-primary text buttonHighlightBlue" id="farm"></button> <!--Gein's Farm-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row mt-2">
+			<div class="col-sm-4">
+				<button class="text-center btn-block border border-danger text buttonHighlightRed" id="choice1"></button>
+			</div>
+			<div class="col-sm-4">
+				<button class="text-center btn-block border border-danger text buttonHighlightRed" id="choice2">Begin</button>
+			</div>
+			<div class="col-sm-4">
+				<button class="text-center btn-block border border-danger text buttonHighlightRed" id="choice3"></button>
+			</div>
+		</div>
+	</div> 
+	<div class="container mt-2">
+		<p class="jumbotron text-center border" id="dialogueBox" style="padding: 2rem 2rem;">
+			<b>How to play:<br></b>
+			You are an investigator in Plainfield. You've been instructed to investigate a crime.<br> <br>
+			This box is where all dialogue and information will appear. Buttons with a blue border are used to navigate Plainfield. When you are prompted with a choice, they will appear above this box with a red border.
+
+		</p>
+	</div>
+	
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </body>
 </html>
